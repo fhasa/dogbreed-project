@@ -1,0 +1,56 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+
+
+
+results_dic {'beagle dog.jpg': [''], 'cat.jpg': [''], 'rottweiler dogs.jpg': [''], 'turtle.jpg': ['']}
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                 beagle dog.jpg  label:                           
+ 2 key:                        cat.jpg  label:                           
+ 3 key:            rottweiler dogs.jpg  label:                           
+ 4 key:                     turtle.jpg  label:                           
+
+     MATCH:
+
+                beagle dog.jpg: 
+Real:                              Classifier:                         beagle
+
+                       cat.jpg: 
+Real:                              Classifier:                 tiger cat, cat
+
+           rottweiler dogs.jpg: 
+Real:                              Classifier:                     rottweiler
+
+                    turtle.jpg: 
+Real:                              Classifier:       box turtle, box tortoise
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+                beagle dog.jpg: 
+Real:                              Classifier:                         beagle  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                       cat.jpg: 
+Real:                              Classifier:                 tiger cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+           rottweiler dogs.jpg: 
+Real:                              Classifier:                     rottweiler  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                    turtle.jpg: 
+Real:                              Classifier:       box turtle, box tortoise  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
