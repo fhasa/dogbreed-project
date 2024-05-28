@@ -2,95 +2,67 @@ Command Line Arguments:
      dir = uploaded_images/ 
     arch = resnet 
  dogfile = dognames.txt
-basenji
-basenji
-basset hound
 
-beagle
-beagle
+dog
+dog
+dog
+dog
+dog
+dog
+dog
 
-
-
-results_dic {'Basenji_00963.jpg': ['basenji'], 'Basenji_00974.jpg': ['basenji'], 'Basset_hound_01034.jpg': ['basset hound'], 'beagle dog.jpg': [''], 'Beagle_01125.jpg': ['beagle'], 'Beagle_01141.jpg': ['beagle'], 'cat.jpg': [''], 'rottweiler dogs.jpg': [''], 'turtle.jpg': ['']}
+results_dic {'cat.jpg': [''], 'Dog_01.jpg': ['dog'], 'Dog_02.jpg': ['dog'], 'Dog_03.jpg': ['dog'], 'Dog_04.jpg': ['dog'], 'Dog_05.jpg': ['dog'], 'Dog_06.jpg': ['dog'], 'Dog_07.jpg': ['dog'], 'turtle.jpg': ['']}
 
 Pet Image Label Dictionary has 9 key-value pairs.
 Below are 9 of them:
- 1 key:              Basenji_00963.jpg  label:                    basenji
- 2 key:              Basenji_00974.jpg  label:                    basenji
- 3 key:         Basset_hound_01034.jpg  label:               basset hound
- 4 key:                 beagle dog.jpg  label:                           
- 5 key:               Beagle_01125.jpg  label:                     beagle
- 6 key:               Beagle_01141.jpg  label:                     beagle
- 7 key:                        cat.jpg  label:                           
- 8 key:            rottweiler dogs.jpg  label:                           
+ 1 key:                        cat.jpg  label:                           
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_03.jpg  label:                        dog
+ 5 key:                     Dog_04.jpg  label:                        dog
+ 6 key:                     Dog_05.jpg  label:                        dog
+ 7 key:                     Dog_06.jpg  label:                        dog
+ 8 key:                     Dog_07.jpg  label:                        dog
  9 key:                     turtle.jpg  label:                           
 
      MATCH:
 
-             Basenji_00963.jpg: 
-Real:                    basenji   Classifier:                        basenji
-
-             Basenji_00974.jpg: 
-Real:                    basenji   Classifier:                        basenji
-
-        Basset_hound_01034.jpg: 
-Real:               basset hound   Classifier:           basset, basset hound
-
-                beagle dog.jpg: 
-Real:                              Classifier:  walker hound, walker foxhound
-
-              Beagle_01125.jpg: 
-Real:                     beagle   Classifier:                         beagle
-
-              Beagle_01141.jpg: 
-Real:                     beagle   Classifier:                         beagle
-
                        cat.jpg: 
 Real:                              Classifier:          tabby, tabby cat, cat
-
-           rottweiler dogs.jpg: 
-Real:                              Classifier:                     rottweiler
 
                     turtle.jpg: 
 Real:                              Classifier:       box turtle, box tortoise
 
  NOT A MATCH:
 
-# Total Images 9 # Matches: 9 # NOT Matches: 0
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                        basenji
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                        basenji
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:           basset, basset hound
+
+                    Dog_04.jpg: 
+Real:                        dog   Classifier:                     rottweiler
+
+                    Dog_05.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    Dog_06.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    Dog_07.jpg: 
+Real:                        dog   Classifier:  walker hound, walker foxhound
+
+# Total Images 9 # Matches: 2 # NOT Matches: 7
 
      MATCH:
-
-             Basenji_00963.jpg: 
-Real:                    basenji   Classifier:                        basenji  
-PetLabelDog: 1  ClassLabelDog: 1
-
-             Basenji_00974.jpg: 
-Real:                    basenji   Classifier:                        basenji  
-PetLabelDog: 1  ClassLabelDog: 1
-
-        Basset_hound_01034.jpg: 
-Real:               basset hound   Classifier:           basset, basset hound  
-PetLabelDog: 1  ClassLabelDog: 1
-
-                beagle dog.jpg: 
-Real:                              Classifier:  walker hound, walker foxhound  
-PetLabelDog: 0  ClassLabelDog: 1
-
-              Beagle_01125.jpg: 
-Real:                     beagle   Classifier:                         beagle  
-PetLabelDog: 1  ClassLabelDog: 1
-
-              Beagle_01141.jpg: 
-Real:                     beagle   Classifier:                         beagle  
-PetLabelDog: 1  ClassLabelDog: 1
 
                        cat.jpg: 
 Real:                              Classifier:          tabby, tabby cat, cat  
 PetLabelDog: 0  ClassLabelDog: 0
-
-           rottweiler dogs.jpg: 
-Real:                              Classifier:                     rottweiler  
-PetLabelDog: 0  ClassLabelDog: 1
 
                     turtle.jpg: 
 Real:                              Classifier:       box turtle, box tortoise  
@@ -98,31 +70,62 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
-# Total Images 9 # Matches: 9 # NOT Matches: 0
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:           basset, basset hound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_04.jpg: 
+Real:                        dog   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_05.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_06.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_07.jpg: 
+Real:                        dog   Classifier:  walker hound, walker foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 9 # Matches: 2 # NOT Matches: 7
 
  ** Statistics from calculates_results_stats() function:
-N Images:  9  N Dog Images:  5  N NotDog Images:  4 
-Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed: 140.0
+N Images:  9  N Dog Images:  7  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
  ** Check Statistics - calculated from this function as a check:
-N Images:  9  N Dog Images:  5  N NotDog Images:  4 
-Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed: 100.0
+N Images:  9  N Dog Images:  7  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
 
 *** Results Summary for CNN Model Architecture RESNET ***
 N Images            :   9
-N Dog Images        :   5
-Number of Not-Dog Images 4.0
+N Dog Images        :   7
+Number of Not-Dog Images 2.0
  
-pct_match 100.0
+pct_match 22.22222222222222
 pct_correct_dogs 100.0
-pct_correct_breed 140.0
-pct_correct_notdogs 50.0
-
-INCORRECT Dog/NOT Dog Assignments:
-real  classifier walker hound, walker foxhound
-real  classifier rottweiler
+pct_correct_breed 0.0
+pct_correct_notdogs 100.0
 
 INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                        basenji
+Real:                        dog   Classifier:                        basenji
+Real:                        dog   Classifier:           basset, basset hound
+Real:                        dog   Classifier:                     rottweiler
+Real:                        dog   Classifier:                         beagle
+Real:                        dog   Classifier:                         beagle
+Real:                        dog   Classifier:  walker hound, walker foxhound
 
 ** Total Elapsed Runtime: 0:59:57
