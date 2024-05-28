@@ -68,7 +68,7 @@ def print_results(results_dic, results_stats_dic, model,
     print("\n\n*** Results Summary for CNN Model Architecture",model.upper(), 
           "***")
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
-    print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
+    print("{:20}: {:3d}".format('N Dog Images', int(results_stats_dic['n_dogs_img'])))
 
     # TODO: 6a. REPLACE print("") with CODE that prints the text string 
     #          'N Not-Dog Images' and then the number of NOT-dog images 

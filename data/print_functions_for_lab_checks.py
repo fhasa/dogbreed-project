@@ -300,10 +300,14 @@ def check_calculating_results(results_dic, results_stats_dic):
         # prints calculated statistics
         print("\n ** Statistics from calculates_results_stats() function:")
         print("N Images: {:2d}  N Dog Images: {:2d}  N NotDog Images: {:2d} \nPct Corr dog: {:5.1f} Pct Corr NOTdog: {:5.1f}  Pct Corr Breed: {:5.1f}".format(
-              results_stats_dic['n_images'], results_stats_dic['n_dogs_img'],
-              results_stats_dic['n_notdogs_img'], results_stats_dic['pct_correct_dogs'],
-              results_stats_dic['pct_correct_notdogs'],
-              results_stats_dic['pct_correct_breed']))
+            int(results_stats_dic['n_images']),
+            int(results_stats_dic['n_dogs_img']),
+            int(results_stats_dic['n_notdogs_img']),
+            float(results_stats_dic['pct_correct_dogs']),
+            float(results_stats_dic['pct_correct_notdogs']),
+            float(results_stats_dic['pct_correct_breed'])
+        ))
+
         print("\n ** Check Statistics - calculated from this function as a check:")
         print("N Images: {:2d}  N Dog Images: {:2d}  N NotDog Images: {:2d} \nPct Corr dog: {:5.1f} Pct Corr NOTdog: {:5.1f}  Pct Corr Breed: {:5.1f}".format(
               n_images, n_pet_dog, n_pet_notd, pct_corr_dog, pct_corr_notdog,

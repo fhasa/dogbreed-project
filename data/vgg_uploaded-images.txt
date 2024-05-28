@@ -2,23 +2,48 @@ Command Line Arguments:
      dir = uploaded_images/ 
     arch = vgg 
  dogfile = dognames.txt
+basenji
+basenji
+basset hound
+
+beagle
+beagle
 
 
 
+results_dic {'Basenji_00963.jpg': ['basenji'], 'Basenji_00974.jpg': ['basenji'], 'Basset_hound_01034.jpg': ['basset hound'], 'beagle dog.jpg': [''], 'Beagle_01125.jpg': ['beagle'], 'Beagle_01141.jpg': ['beagle'], 'cat.jpg': [''], 'rottweiler dogs.jpg': [''], 'turtle.jpg': ['']}
 
-results_dic {'beagle dog.jpg': [''], 'cat.jpg': [''], 'rottweiler dogs.jpg': [''], 'turtle.jpg': ['']}
-
-Pet Image Label Dictionary has 4 key-value pairs.
-Below are 4 of them:
- 1 key:                 beagle dog.jpg  label:                           
- 2 key:                        cat.jpg  label:                           
- 3 key:            rottweiler dogs.jpg  label:                           
- 4 key:                     turtle.jpg  label:                           
+Pet Image Label Dictionary has 9 key-value pairs.
+Below are 9 of them:
+ 1 key:              Basenji_00963.jpg  label:                    basenji
+ 2 key:              Basenji_00974.jpg  label:                    basenji
+ 3 key:         Basset_hound_01034.jpg  label:               basset hound
+ 4 key:                 beagle dog.jpg  label:                           
+ 5 key:               Beagle_01125.jpg  label:                     beagle
+ 6 key:               Beagle_01141.jpg  label:                     beagle
+ 7 key:                        cat.jpg  label:                           
+ 8 key:            rottweiler dogs.jpg  label:                           
+ 9 key:                     turtle.jpg  label:                           
 
      MATCH:
 
+             Basenji_00963.jpg: 
+Real:                    basenji   Classifier:                        basenji
+
+             Basenji_00974.jpg: 
+Real:                    basenji   Classifier:                        basenji
+
+        Basset_hound_01034.jpg: 
+Real:               basset hound   Classifier:           basset, basset hound
+
                 beagle dog.jpg: 
 Real:                              Classifier:                         beagle
+
+              Beagle_01125.jpg: 
+Real:                     beagle   Classifier:                         beagle
+
+              Beagle_01141.jpg: 
+Real:                     beagle   Classifier:                         beagle
 
                        cat.jpg: 
 Real:                              Classifier:                 tiger cat, cat
@@ -31,13 +56,33 @@ Real:                              Classifier:       box turtle, box tortoise
 
  NOT A MATCH:
 
-# Total Images 4 # Matches: 4 # NOT Matches: 0
+# Total Images 9 # Matches: 9 # NOT Matches: 0
 
      MATCH:
+
+             Basenji_00963.jpg: 
+Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Basenji_00974.jpg: 
+Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+        Basset_hound_01034.jpg: 
+Real:               basset hound   Classifier:           basset, basset hound  
+PetLabelDog: 1  ClassLabelDog: 1
 
                 beagle dog.jpg: 
 Real:                              Classifier:                         beagle  
 PetLabelDog: 0  ClassLabelDog: 1
+
+              Beagle_01125.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              Beagle_01141.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
 
                        cat.jpg: 
 Real:                              Classifier:                 tiger cat, cat  
@@ -53,4 +98,31 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
-# Total Images 4 # Matches: 4 # NOT Matches: 0
+# Total Images 9 # Matches: 9 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  9  N Dog Images:  5  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed: 140.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  9  N Dog Images:  5  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   9
+N Dog Images        :   5
+Number of Not-Dog Images 4.0
+ 
+pct_match 100.0
+pct_correct_dogs 100.0
+pct_correct_breed 140.0
+pct_correct_notdogs 50.0
+
+INCORRECT Dog/NOT Dog Assignments:
+real  classifier beagle
+real  classifier rottweiler
+
+INCORRECT Dog Breed Assignment:
+
+** Total Elapsed Runtime: 0:59:55
