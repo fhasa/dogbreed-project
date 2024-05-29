@@ -103,7 +103,7 @@ def main():
     # Function that checks Results Statistics Dictionary using results_stats
     check_calculating_results(results, results_stats)
 
-    sleep(2)
+    #sleep(2)
     # TODO 6: Define print_results function within the file print_results.py
     # Once the print_results function has been defined replace 'None'
     # in the function call with in_arg.arch  Once you have done the
@@ -117,7 +117,7 @@ def main():
     end_time = time()
 
     # TODO 0: Computes overall runtime in seconds & prints it in hh:mm:ss format
-    tot_time = start_time - end_time
+    tot_time = end_time - start_time
     # calculate difference between end time and start time
     print("\n** Total Elapsed Runtime:",
           str(int((tot_time/3600)))+":"+str(int((tot_time % 3600)/60))+":"
